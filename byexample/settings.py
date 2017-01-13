@@ -25,7 +25,7 @@ SECRET_KEY = '@q^5gv#z%4b^kx)ja=vgj-4@*b_1+kt_m_2z@zvd&*la0mwz$y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = ['kedroboss.pythonanywhere.com']
 
 
 # Application definition
