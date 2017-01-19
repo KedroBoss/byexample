@@ -1,6 +1,5 @@
 from django.contrib.syndication.views import Feed
 from django.template.defaultfilters import truncatewords
-from .templatetags.blog_tags import markdown_format
 from .models import Post
 
 
@@ -16,4 +15,4 @@ class LatestPostsFeed(Feed):
         return item.title
 
     def item_description(self, item):
-        return markdown_format(truncatewords(item.body, 30))
+        return truncatewords(item.body, 30)
